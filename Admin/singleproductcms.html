@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/General css/adminnavbar.css">
+    <link rel="stylesheet" href="./css/singleproductcms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <title>Veshu</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../component/allahkirsinson2.svg"></div>
+        <div class="button"><a href="./adminorder.html">Orders</a></div>
+        <div class="cms"><a href="./admincms.html" class="check">CMS</a></div>
+        <div class="statistics"><a>Statistics</a></div>
+    </header>
+    <div class="container">
+        <div class="product_prop_left">
+            <input type="text" class="product name" id="product_name"placeholder="product name">
+            <input type="text" class="product barcode" placeholder="product barcode">
+            <ul><input type="text" spellcheck="false" class="tags"></ul>
+            <div class="details">
+                <p><span>10</span> tags are remaining</p>
+            </div>
+            <div class="price_area">
+            <input type="text" class="price" id="price" placeholder="Price"><i class="fa-solid fa-euro-sign"></i>
+            <select class="sale" onchange="handleChange(this)">
+                <option selected>No Sale</option>
+                <option>Add Sale</option>
+            </select><button class="remove_sale">X</button>
+            </div>
+            <div class="models">
+                <div class="top_list">
+                    <p>Add Size</p>
+                    <div class="plus" id="plus">+</div>
+                </div>
+                <div class="option_menu"></div>
+                
+            </div>
+        </div>
+        <div class="product_prop_right">
+            <div class="main_image" style="background-image: url(../product-image/erkek-cocuk-giyim-ueruenlerinde-olmazsa-olmaz-parcalar-cover.jpg)"></div>
+            <div class="sml_con">
+            <div class="sml_img img_1" style="background-image: url(../product-image/bej-derin-yirtmacli-sifir-kol-kadin-triko-elbise-midi-elbiseler-swist-23745-26-K.jpg)"></div>
+            <div class="sml_img img_2" style="background-image: url(../product-image/images\ \(1\).jpeg);"></div>
+            <div class="sml_img img_3" style="background-image: url(../product-image/lacivert-mom-jeanmom-jean--5d6b6.jpg);"></div>
+            <div class="sml_img img_4" style="background-image: url(../product-image/images.jpeg);"></div>
+            <div class="sml_img img_plus"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <textarea class="info" placeholder="Product Info"></textarea>
+        </div>
+    </div>
+    <div class="bg">
+    </div>
+</body>
+    <script src="./javascript/add_product_option/addprop.js"></script>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/add_product_option/add_option_option.js"></script>
+    <script src="./javascript/sale.js"></script>
+    <script src="../../veshuserver-main/Functions/Admin/ManageProducts/addNewProductRequestF.js"></script>
+    <script src="./javascript/add_product_option/add_prodct_schema_opt/add_new_prdct.js"></script>
+    <script src="./javascript/add_product_option/option_place.js"></script>
+    <script src="./javascript/add_product_option/option_place_number.js"></script>
+</html>

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.left_screen , .right_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.left_screen{
+    border-right: 2px solid  rgb(30,30,30);
+}
+.right_screen{
+    flex-direction: column;
+    justify-content: center;
+}
+.product{
+    display: flex;
+    width: 90%;
+    border: 1px solid  #a6a6a6;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(90,90,90,0.25);
+    margin-bottom: 20px;
+}
+.product p{
+    font-weight: bold;
+}
+.image{
+    width: 25%;
+    height: 160px;
+    background-image: url(../../product-image/5_uploads-77927.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 1px solid #a6a6a6;
+}
+.product_name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    font-size: 19px;
+    margin-left: 10px;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid  rgb(30,30,30 , 0.8);
+    border-right: 1px solid  rgb(30,30,30, 0.8);
+    width: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 21px;
+    height: 90%;
+    text-align: center;
+}
+.unit_price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 21px;
+    width: 15%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    height: 90%;
+}
+.total_price{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid  rgb(30,30,30 , 0.8);
+    border-right: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 21px;
+    text-align: center;
+    width: 15%;
+    height: 90%;
+}
+.order_prop{
+    bottom: 25px;
+    width: 90%;
+    font-size: 21px;
+}
+.prop{
+    display: flex;
+    border: 1px solid rgb(30,30,30,0.8);
+    width: 100%;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(30,30,30);
+    background-color: #f9f9f9;
+}
+.prop p{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.prop .p1{
+    border-right: 1px solid rgb(30,30,30,0.8);
+}
+.buyer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.time{
+    border-bottom: 1px solid rgb(30,30,30 , 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+.buttons button{
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+}
+.buttons button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px  rgb(90,90,90,0.25);
+}
+.reject_order{
+    background-color: #DC362C;
+}
+.accept_order{
+    background-color: #88D969;
+}
+@media screen and (max-width : 1068px) {
+    .container{
+        flex-direction: column;
+    }
+    .right_screen , .left_screen{
+        width: 100%;
+    }
+    .right_screen{
+        margin-bottom: 0;
+    }
+    .product_name{
+        font-size: 18px;
+    }
+    .unit_price{
+        font-size: 18px;
+    }
+    .total_price{
+        font-size: 18px;
+        flex-wrap: wrap;
+        height: 90%;
+    }
+    .order_prop{
+        margin-top: 30px;
+        position: relative;
+        font-size: 20px;
+        width: 100%;
+    }
+    .buttons button{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+}
